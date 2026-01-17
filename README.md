@@ -114,9 +114,9 @@ macOS/Linux - ОС на системе Unix, Windows - отдельная ОС
  
 ``` mermaid
 graph LR;
-  untracked -- "git add" --> staged (в списке на коммит tracked);
-  staged (в списке на коммит tracked) -- "git commit" --> tracked;
-  tracked -- "изменения" --> modified;
-  modified -- "git add" --> staged (в списке на коммит tracked);
+  untracked -- "git add" --> staged;
+  staged  -- "git commit" --> tracked;
+  tracked -- "change" --> modified;
+  modified -- "git add" --> staged;
 
 ```
